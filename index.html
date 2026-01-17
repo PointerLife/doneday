@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>doneday</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1 class="app__title">doneday</h1>
+      </header>
+
+      <section class="board">
+        <section class="board__column board__column--tasks">
+          <header class="column__header">
+            <h2 class="column__count">1/2</h2>
+            <h2 class="column__title">Tasks</h2>
+          </header>
+          <ul class="column__list" aria-label="Tasks"></ul>
+        </section>
+
+        <section class="board__column board__column--ongoing">
+          <header class="column__header">
+            <h2 class="column__title">Ongoing</h2>
+          </header>
+          <ul class="column__list" aria-label="Ongoing"></ul>
+        </section>
+
+        <section class="board__column board__column--completed">
+          <header class="column__header">
+            <h2 class="column__title">Completed</h2>
+          </header>
+          <ul class="column__list" aria-label="Completed"></ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
