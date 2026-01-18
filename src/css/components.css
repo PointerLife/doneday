@@ -1,0 +1,91 @@
+body {
+  background: var(--bg-color);
+  color: var(--text-color-subheading);
+}
+
+.app__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-color-heading);
+}
+
+.board__column {
+  background: var(--column1);
+  border-radius: var(--radius);
+
+  /* POP effect */
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.board__column:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Column color variants */
+.board__column--tasks {
+  background: var(--column1);
+}
+
+.board__column--ongoing {
+  background: var(--column2);
+}
+
+.board__column--completed {
+  background: var(--column3);
+}
+
+.column__title {
+  font-size: 1.4rem;
+}
+
+.column__count {
+  opacity: 0.7;
+}
+
+/* CARD visuals */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  color: #000;
+  border-radius: calc(var(--radius) - 4px);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* TIMESTAMP visuals */
+.card__timestamp span {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  font-weight: 500;
+}
+
+/* CARD content text */
+.card__content {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}

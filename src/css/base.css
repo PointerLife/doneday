@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap");
+
+:root {
+  --bg-color: #2d2c2c;
+  --bg-color-column: #fff;
+  --column1: #d2dfd4;
+  --column2: #d9d0b9;
+  --column3: #a7d0a6e6;
+  --text-color-heading: #ffffff;
+  --text-color-subheading: #000;
+  --radius: 16px;
+  --font-family: "Buda", system-ui, cursive;
+  --column-font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}

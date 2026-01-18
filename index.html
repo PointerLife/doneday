@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/main.css" />
     <title>doneday</title>
   </head>
   <body>
@@ -17,11 +18,69 @@
             <h2 class="column__count">1/2</h2>
             <h2 class="column__title">Tasks</h2>
           </header>
-          <ul class="column__list" aria-label="Tasks"></ul>
+          <ul class="column__list" aria-label="Tasks">
+            <li class="card">
+              <div class="card__timestamp">
+                <span>1:00am</span>
+                <span>4:00am</span>
+                <span>10:00am</span>
+              </div>
+              <p class="card__content">
+                This is just description for task. let's say i am going to do
+                something which might might do anything idk what going to happen
+                etc.
+              </p>
+            </li>
+            <li class="card">
+              <div class="card__timestamp">
+                <span>1:00am</span>
+                <span>4:00am</span>
+                <span>10:00am</span>
+              </div>
+              <p class="card__content">
+                This is just description for task. let's say i am going to do
+                something which might might do anything idk what going to happen
+                etc.
+              </p>
+            </li>
+            <li class="card">
+              <div class="card__timestamp">
+                <span>1:00am</span>
+                <span>4:00am</span>
+                <span>10:00am</span>
+              </div>
+              <p class="card__content">
+                This is just description for task. let's say i am going to do
+                something which might might do anything idk what going to happen
+                etc.
+              </p>
+            </li>
+            <li class="card">
+              <div class="card__timestamp">
+                <span>1:00am</span>
+                <span>4:00am</span>
+                <span>10:00am</span>
+              </div>
+              <p class="card__content">
+                This is just description for task. let's say i am going to do
+                something which might might do anything idk what going to happen
+                etc.
+              </p>
+            </li>
+            <li class="card">
+              <div class="card__timestamp">
+                <span>1:00am</span>
+                <span>4:00am</span>
+                <span>10:00am</span>
+              </div>
+              <p class="card__content">This is just description for task.</p>
+            </li>
+          </ul>
         </section>
 
         <section class="board__column board__column--ongoing">
           <header class="column__header">
+            <span class="column__count"></span>
             <h2 class="column__title">Ongoing</h2>
           </header>
           <ul class="column__list" aria-label="Ongoing"></ul>
@@ -29,6 +88,7 @@
 
         <section class="board__column board__column--completed">
           <header class="column__header">
+            <span class="column__count"></span>
             <h2 class="column__title">Completed</h2>
           </header>
           <ul class="column__list" aria-label="Completed"></ul>
